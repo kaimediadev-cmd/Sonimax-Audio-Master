@@ -1,4 +1,4 @@
-# SoniMax Audio Master 2026 - Enterprise Edition
+﻿# SoniMax Audio Master 2026 - Enterprise Edition
 
 Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gói Firmware mạch loa kéo chuyên nghiệp.
 
@@ -9,11 +9,18 @@ Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gó
 
 ---
 
+## 📥 Tải về trực tiếp (Download)
+
+- 📦 **[Tải trọn bộ SoniMax_AudioMaster_2026_Enterprise.zip](https://github.com/kaimediadev-cmd/Sonimax-Audio-Master/raw/main/SoniMax_AudioMaster_2026_Enterprise.zip)** *(Khuyên dùng - Đầy đủ công cụ và thư viện)*
+- ⚡ **[Tải riêng file SoniMaxAudioMaster.exe](https://raw.githubusercontent.com/kaimediadev-cmd/Sonimax-Audio-Master/main/SoniMaxAudioMaster.exe)**
+
+---
+
 ## 🚀 Tính năng nổi bật
 
 ### 1. Hỗ trợ đa nền tảng chip vi điều khiển âm thanh
-- **Dòng JieLi:** AC695N, AC696N (Định dạng file nạp: `.ufw`).
-- **Dòng Bluetrum:** JX5918, H17N, T400S, T450S, V450S, V9033S, DSP-21X (Định dạng file nạp: `.upd`).
+- **Dòng JieLi:** AC695N, AC696N (Định dạng file nạp: .ufw).
+- **Dòng Bluetrum:** JX5918, H17N, T400S, T450S, V450S, V9033S, DSP-21X (Định dạng file nạp: .upd).
 
 ### 2. Đổi tên Bluetooth thông minh (Hỗ trợ tiếng Việt có dấu UTF-8)
 - Thay đổi tên hiển thị Bluetooth tùy biến cho mạch loa kéo.
@@ -25,12 +32,12 @@ Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gó
 - Cho phép thợ làm file tùy biến đổi mật khẩu mới để khóa file firmware độc quyền.
 
 ### 4. Tinh chỉnh DSP & Cân chỉnh EQ chuyên sâu
-- **JieLi:** Tinh chỉnh DSP KT0708 thông qua cặp file mốc `truoc.c` và `sau.c`.
+- **JieLi:** Tinh chỉnh DSP KT0708 thông qua cặp file mốc 	ruoc.c và sau.c.
 - **JX5918:** Tự động nhận diện các đời mạch:
-  - *Đời Mới 2026 FBX 2 Chức Năng:* Hỗ trợ nạp 5 Mode Hát riêng biệt (`group_1.bin` -> `group_5.bin`) & 3 cấp chống hú.
-  - *Đời V9033S / V5022S:* Hỗ trợ 3 Group DSP (`group_0.bin` -> `group_2.bin`).
-  - *Đời 1 Group Cố Định:* V450S / T600S / V102L (`group_0.bin`).
-  - Hỗ trợ nút đồng bộ nhanh 1 file `.bin` cho toàn bộ các Mode đang kích hoạt.
+  - *Đời Mới 2026 FBX 2 Chức Năng:* Hỗ trợ nạp 5 Mode Hát riêng biệt (group_1.bin -> group_5.bin) & 3 cấp chống hú.
+  - *Đời V9033S / V5022S:* Hỗ trợ 3 Group DSP (group_0.bin -> group_2.bin).
+  - *Đời 1 Group Cố Định:* V450S / T600S / V102L (group_0.bin).
+  - Hỗ trợ nút đồng bộ nhanh 1 file .bin cho toàn bộ các Mode đang kích hoạt.
 
 ### 5. Thay thế & Chuẩn hóa âm thanh thông báo MP3
 - Tự động gọt khoảng lặng sạch sẽ 2 đầu và nén vừa khít dung lượng slot Flash gốc (Zero-Overflow).
@@ -47,15 +54,15 @@ Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gó
 ## 📦 Bộ tệp tin chương trình
 
 Để chương trình hoạt động ổn định, gói cài đặt gồm:
-1. `SoniMaxAudioMaster.exe` : File thực thi chính của phần mềm (đã tích hợp icon logo & chứng thực phiên bản).
-2. `HUONG_DAN_SU_DUNG.txt` : Tài liệu hướng dẫn sử dụng chi tiết.
-3. Thư mục `core/` : Chứa các thư viện phụ trợ hệ thống (`SoniMaxGuard.dll`, `ffmpeg.exe`).
+1. SoniMaxAudioMaster.exe : File thực thi chính của phần mềm (đã tích hợp icon logo & chứng thực phiên bản).
+2. HUONG_DAN_SU_DUNG.txt : Tài liệu hướng dẫn sử dụng chi tiết.
+3. Thư mục core/ : Chứa các thư viện phụ trợ hệ thống (SoniMaxGuard.dll, fmpeg.exe).
 
 ---
 
 ## 🔑 Kích hoạt bản quyền
 
-1. Khởi động `SoniMaxAudioMaster.exe`.
+1. Khởi động SoniMaxAudioMaster.exe.
 2. Hộp thoại Đăng Nhập Hệ Thống xuất hiện. Bấm nút **[Sao chép]** tại ô **Mã nhận diện máy (HWID)**.
 3. Gửi mã HWID và Gmail của bạn cho Quản trị viên để kích hoạt tài khoản.
 4. Đăng nhập và bắt đầu sử dụng.

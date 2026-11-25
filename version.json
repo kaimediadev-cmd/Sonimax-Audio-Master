@@ -1,7 +1,7 @@
-{
+﻿{
   "status": "success",
   "version": "2026.2.3",
-  "download_url": "https://raw.githubusercontent.com/kaimediadev-cmd/Sonimax-Audio-Master/main/SoniMaxAudioMaster.exe",
-  "changelog": "- Cân đối giao diện hàng 3, chống tràn chữ và chuẩn hóa bố cục.\n- Xóa bỏ huy hiệu màu trang trí và dòng chữ quét đời mạch rác.\n- Hỗ trợ đổi tên Bluetooth có dấu tiếng Việt UTF-8 chuẩn xác.\n- Tích hợp tính năng đổi mật khẩu phần cứng UPD (dòng V V V V).\n- Nâng cấp hệ thống Auto-Update đồng bộ GitHub.",
+  "download_url": "https://raw.githubusercontent.com/kaimediadev-cmd/Sonimax-Audio-Master/main/SoniMax_AudioMaster_2026_Enterprise.zip",
+  "changelog": "- Bản phát hành chính thức 2026.2.3 Enterprise trọn gói.\n- Tích hợp biểu tượng Logo chuyên nghiệp và chứng thực Assembly x64.\n- Tự động nhận diện cấu hình DSP đa đời mạch JX5918 / JieLi.\n- Đổi tên Bluetooth tiếng Việt có dấu và đổi mật khẩu phần cứng .upd.\n- Tối ưu đóng gói thư viện phụ trợ vào core/.",
   "required": false
 }
