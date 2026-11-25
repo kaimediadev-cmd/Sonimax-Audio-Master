@@ -46,11 +46,10 @@ Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gó
 
 ## 📦 Bộ tệp tin chương trình
 
-Để chương trình hoạt động ổn định, các tệp sau cần được đặt chung trong một thư mục:
-1. `SoniMaxAudioMaster.exe` : File thực thi chính của phần mềm.
-2. `SoniMaxGuard.dll`      : Thư viện bảo mật C++ Native x64.
-3. `ffmpeg.exe`            : Bộ xử lý chuẩn hóa tần số âm thanh chuyên dụng.
-4. `HUONG_DAN_SU_DUNG.txt` : Tài liệu hướng dẫn sử dụng chi tiết.
+Để chương trình hoạt động ổn định, gói cài đặt gồm:
+1. `SoniMaxAudioMaster.exe` : File thực thi chính của phần mềm (đã tích hợp icon logo & chứng thực phiên bản).
+2. `HUONG_DAN_SU_DUNG.txt` : Tài liệu hướng dẫn sử dụng chi tiết.
+3. Thư mục `core/` : Chứa các thư viện phụ trợ hệ thống (`SoniMaxGuard.dll`, `ffmpeg.exe`).
 
 ---
 
