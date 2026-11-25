@@ -1,0 +1,68 @@
+================================================================================
+SONIMAX AUDIO MASTER 2026 - ENTERPRISE EDITION
+PHẦN MỀM CHỈNH SỬA & ĐÓNG GÓI FIRMWARE MẠCH LOA KÉO CHUYÊN NGHIỆP
+================================================================================
+
+I. GIỚI THIỆU TỔNG QUAN:
+SoniMax Audio Master 2026 là công cụ chuyên dụng cao cấp dành cho xưởng sản xuất,
+kỹ thuật viên và đại lý loa kéo:
+- Hỗ trợ toàn diện 2 nền tảng chip phổ biến nhất hiện nay:
+  + Dòng JieLi: AC695N, AC696N (Định dạng file nạp: .ufw)
+  + Dòng Bluetrum: JX5918, H17N, T400S, T450S, V450S, V9033S, DSP-21X (Định dạng file nạp: .upd)
+- Đổi tên Bluetooth thiết bị tùy ý, hỗ trợ đầy đủ tiếng Việt có dấu chuẩn UTF-8 (tối đa 31 bytes).
+- Đổi mã khóa phần cứng mạch .upd (dòng mã khóa bảo vệ bản quyền file firmware).
+- Thay thế và chuẩn hóa toàn bộ âm thanh thông báo (Khởi động, Kết nối Bluetooth, Ngắt kết nối...).
+- Cân chỉnh DSP âm học nâng cao (KT0708 cho JieLi và 5 Group Mode EQ cho JX5918).
+- Công nghệ bảo vệ Zero-Brick 6 lớp: Đảm bảo 100% không bao giờ nạp sai vùng nhớ làm hỏng mạch.
+- Tích hợp kiểm tra và cập nhật tự động (Auto-Update) đồng bộ trực tiếp từ máy chủ & GitHub.
+
+II. BỘ TỆP TIN CHƯƠNG TRÌNH (CẦN GIỮ NGUYÊN TRONG CÙNG THƯ MỤC):
+1. SoniMaxAudioMaster.exe  : File chạy chính của phần mềm (Version 2026.2.3).
+2. SoniMaxGuard.dll       : Thư viện bảo mật C++ Native x64 & chống can thiệp bộ nhớ.
+3. ffmpeg.exe             : Bộ xử lý chuẩn hóa âm thanh chuyên nghiệp (11,025 Hz MPEG-2.5).
+4. HUONG_DAN_SU_DUNG.txt  : Tài liệu hướng dẫn sử dụng chi tiết.
+
+* Lưu ý: Không đổi tên hoặc di chuyển riêng lẻ các file trên ra khỏi thư mục.
+
+III. KÍCH HOẠT BẢN QUYỀN & ĐĂNG NHẬP:
+1. Khi khởi động phần mềm lần đầu, hộp thoại Đăng Nhập Hệ Thống sẽ xuất hiện.
+2. Tại mục "3. Mã nhận diện máy (HWID C++ Native)", bấm nút [Sao chép].
+3. Gửi mã HWID này (dạng: SONIMAX-XXXXXXXX) cùng Gmail của bạn cho Quản trị viên để cấp quyền.
+4. Nhập Gmail và Mật khẩu được cấp, tích chọn "Ghi nhớ thông tin đăng nhập" rồi bấm
+   [ĐĂNG NHẬP VÀO HỆ THỐNG].
+5. Phần mềm sẽ lưu phiên làm việc an toàn, những lần mở sau sẽ tự động vào thẳng chương trình.
+
+IV. HƯỚNG DẪN THAO TÁC SỬ DỤNG:
+
+1. ĐỐI VỚI DÒNG MẠCH JIELI AC695N (.ufw):
+   - Kéo thả file firmware gốc (.ufw) vào giao diện phần mềm hoặc bấm [Chọn file...].
+   - Nhập Tên Bluetooth mới (hỗ trợ tiếng Việt có dấu, tối đa 31 bytes UTF-8).
+     Để trống ô Tên Bluetooth nếu muốn giữ nguyên tên gốc của mạch.
+   - Nhập file mốc DSP: file truoc.c (trước khi chỉnh) và sau.c (sau khi chỉnh).
+   - Chọn file âm thanh MP3 thay thế cho: Khởi động, Đã kết nối, Ngắt kết nối...
+   - Bấm [1. Soi trước thay đổi] để phần mềm kiểm tra toàn bộ 6 lớp bảo mật CRC16.
+   - Bấm [2. Đóng gói & Kiểm tra an toàn] để tạo file xuất ra có đuôi "_SoniMaxMod.ufw".
+   - Copy file "_SoniMaxMod.ufw" vào USB và cắm vào mạch loa kéo để nạp.
+
+2. ĐỐI VỚI DÒNG MẠCH BLUETRUM JX5918 (.upd):
+   - Chọn nút [JX5918 Series (.upd)] hoặc kéo thả trực tiếp file .upd vào phần mềm.
+   - Phần mềm tự động nhận diện tên Bluetooth và Mã khóa đang có sẵn trong mạch.
+   - Nhập Tên Bluetooth mới (hỗ trợ tiếng Việt có dấu) và Mã khóa mới nếu muốn đổi.
+   - Nạp file cân chỉnh âm thanh DSP (.bin): Có thể nạp riêng cho từng Mode (1 -> 5)
+     hoặc bấm nút [Áp dụng 1 file .bin cho tất cả Mode] để đồng bộ nhanh.
+   - Nạp các file âm báo thay thế (en_start.mp3, en_connected.mp3, en_disconnect.mp3...).
+     Nếu muốn giữ âm gốc của câu nào, chỉ cần để trống ô đó.
+   - Bấm [2. Đóng gói & Kiểm tra an toàn] để tạo file nạp "_SoniMaxMod.upd".
+   - Copy file "_SoniMaxMod.upd" vào USB để nâng cấp cho loa.
+
+V. LƯU Ý KỸ THUẬT QUAN TRỌNG:
+- USB nạp mạch nên định dạng chuẩn FAT32, dung lượng từ 1GB - 32GB để mạch đọc ổn định nhất.
+- Trong lúc mạch đang nạp firmware từ USB (đèn nháy hoặc phát âm báo tít tít), tuyệt đối
+  không tắt nguồn loa cho đến khi loa khởi động lại thành công.
+- Phần mềm luôn giữ nguyên vẹn file firmware gốc, file xuất ra luôn mang tên mới có hậu tố
+  "_SoniMaxMod" để người dùng dễ dàng phân biệt và lưu trữ.
+
+================================================================================
+BẢN QUYỀN THUỘC VỀ HỆ THỐNG SONIMAX AUDIO MASTER 2026
+Hỗ trợ kỹ thuật & Đăng ký bản quyền: Liên hệ Quản trị viên
+================================================================================
