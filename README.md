@@ -5,7 +5,7 @@ Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gó
 ![Platform](https://img.shields.io/badge/Platform-Windows%20x64-blue)
 ![Framework](https://img.shields.io/badge/.NET%20Framework-4.0%2B-green)
 ![Security](https://img.shields.io/badge/Security-SoniMax%20Guard%20Native%20x64-purple)
-![Version](https://img.shields.io/badge/Version-2026.2.3-orange)
+![Version](https://img.shields.io/badge/Version-2026.2.4-orange)
 
 ---
 
@@ -22,17 +22,17 @@ Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gó
 - **Dòng JieLi:** AC695N, AC696N (Định dạng file nạp: .ufw).
 - **Dòng Bluetrum:** JX5918, H17N, T400S, T450S, V450S, V9033S, DSP-21X (Định dạng file nạp: .upd).
 
-### 2. Đổi tên Bluetooth thông minh (Hỗ trợ tiếng Việt có dấu UTF-8)
-- Thay đổi tên hiển thị Bluetooth tùy biến cho mạch loa kéo.
-- Hỗ trợ đầy đủ tiếng Việt có dấu chuẩn UTF-8 (tối đa 31 bytes).
-- Tự động nhận diện tên gốc lưu trong chip và đồng bộ phân vùng cấu hình.
+### 2. Tự động nhận diện Tên Bluetooth & Mã khóa chip
+- **JieLi (.ufw):** Tự động bóc tách Tên Bluetooth gốc và Mã khóa chip (Chipkey 0x2606) từ phân vùng cfg_tool.bin và tail.bin.
+- **Bluetrum (.upd):** Tự động nhận diện Tên Bluetooth và Mật khẩu phần cứng bảo vệ nạp mạch.
+- Hỗ trợ đổi tên Bluetooth tiếng Việt có dấu chuẩn UTF-8 (tối đa 31 bytes).
 
-### 3. Đổi mã khóa phần cứng mạch .upd
-- Tự động quét và phát hiện mã khóa (password) bảo vệ bản quyền nạp của mạch.
-- Cho phép thợ làm file tùy biến đổi mật khẩu mới để khóa file firmware độc quyền.
+### 3. Tính năng Bóc tách EQ / DSP hai chiều độc quyền (Reverse EQ Extraction)
+- **Bóc EQ từ JieLi (.ufw):** Trích xuất cấu hình phần cứng DSP KT0708 (eq_cfg_hw.bin) thành mã nguồn C chuẩn (file mốc 	ruoc.c) để so sánh và tinh chỉnh với sau.c.
+- **Bóc EQ từ Bluetrum (.upd):** Trích xuất toàn bộ các tệp group_0.bin -> group_5.bin ra thư mục riêng, cho phép kéo thả vào Audio WorkBench để xem & chỉnh sửa âm sắc gốc của các hãng loa.
 
 ### 4. Tinh chỉnh DSP & Cân chỉnh EQ chuyên sâu
-- **JieLi:** Tinh chỉnh DSP KT0708 thông qua cặp file mốc 	ruoc.c và sau.c.
+- **JieLi:** Tinh chỉnh DSP KT0708 thông qua cặp file mốc 	ruoc.c và sau.c, hỗ trợ đồng bộ cả 2 preset phần cứng.
 - **JX5918:** Tự động nhận diện các đời mạch:
   - *Đời Mới 2026 FBX 2 Chức Năng:* Hỗ trợ nạp 5 Mode Hát riêng biệt (group_1.bin -> group_5.bin) & 3 cấp chống hú.
   - *Đời V9033S / V5022S:* Hỗ trợ 3 Group DSP (group_0.bin -> group_2.bin).

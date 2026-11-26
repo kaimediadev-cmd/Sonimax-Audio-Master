@@ -1,7 +1,7 @@
 ﻿{
   "status": "success",
-  "version": "2026.2.3",
+  "version": "2026.2.4",
   "download_url": "https://raw.githubusercontent.com/kaimediadev-cmd/Sonimax-Audio-Master/main/SoniMax_AudioMaster_2026_Enterprise.zip",
-  "changelog": "- Bản phát hành chính thức 2026.2.3 Enterprise trọn gói.\n- Tích hợp biểu tượng Logo chuyên nghiệp và chứng thực Assembly x64.\n- Tự động nhận diện cấu hình DSP đa đời mạch JX5918 / JieLi.\n- Đổi tên Bluetooth tiếng Việt có dấu và đổi mật khẩu phần cứng .upd.\n- Tối ưu đóng gói thư viện phụ trợ vào core/.",
+  "changelog": "- Tính năng bóc tách EQ hai chiều: Trích xuất DSP KT0708 từ firmware JieLi (.ufw) ra file mốc truoc.c chuẩn C.\n- Trích xuất toàn bộ EQ DSP (.bin) từ firmware JX5918 (.upd) để xem & tinh chỉnh trực tiếp trên Audio WorkBench.\n- Tự động nhận diện Tên Bluetooth gốc và Mã khóa chip (Chipkey 0x2606) từ file .ufw khi nạp firmware.\n- Thiết kế giao diện chuyên nghiệp chuẩn hóa, cân đối hoàn hảo hai dòng chip và hiển thị sạch đẹp không tràn khung.\n- Cập nhật hệ thống bảo vệ SoniMax Guard x64.",
   "required": false
 }
