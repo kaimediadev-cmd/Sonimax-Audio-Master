@@ -2,6 +2,6 @@
   "status": "success",
   "version": "2026.2.4",
   "download_url": "https://raw.githubusercontent.com/kaimediadev-cmd/Sonimax-Audio-Master/main/SoniMax_AudioMaster_2026_Enterprise.zip",
-  "changelog": "- Tính năng bóc tách EQ hai chiều: Trích xuất DSP KT0708 từ firmware JieLi (.ufw) ra file mốc truoc.c chuẩn C.\n- Trích xuất toàn bộ EQ DSP (.bin) từ firmware JX5918 (.upd) để xem & tinh chỉnh trực tiếp trên Audio WorkBench.\n- Tự động nhận diện Tên Bluetooth gốc và Mã khóa chip (Chipkey 0x2606) từ file .ufw khi nạp firmware.\n- Thiết kế giao diện chuyên nghiệp chuẩn hóa, cân đối hoàn hảo hai dòng chip và hiển thị sạch đẹp không tràn khung.\n- Cập nhật hệ thống bảo vệ SoniMax Guard x64.",
+  "changelog": "- Khắc phục lỗi nghiêm trọng (Critical Bug Fix): Tự động tính toán lại bảng kiểm tra CRC16 từng block 512B cho phân vùng XRES khi nạp Group DSP / Audio, triệt tiêu 100% hiện tượng chết mạch và đen màn hình trên bo mạch JX5918 / V400L.\n- Bóc tách EQ DSP (.bin) từ file .upd chuẩn xác 100% từ dữ liệu giải mã thật, sẵn sàng nạp trực tiếp vào Audio WorkBench.\n- Không tự động xuất file .c / .bin mốc khi vừa nạp firmware gốc; chỉ xuất file khi người dùng nhấn nút yêu cầu.\n- Đổi đuôi file xuất ra mặc định ngắn gọn thành _Mod.ufw và _Mod.upd.\n- Căn chỉnh vị trí ô nhập Tên Bluetooth và Mã khóa thẳng hàng, tự động xóa trắng thông tin khi chuyển đổi chip.\n- Đóng gói đầy đủ thông tin Version 2026.2.4 Enterprise, Copyright và Icon thẩm mỹ vào file EXE.",
   "required": false
 }
