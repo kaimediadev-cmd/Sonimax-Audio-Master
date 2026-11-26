@@ -5,7 +5,7 @@ Phần mềm chuyên dụng cao cấp can thiệp, tinh chỉnh DSP & đóng gó
 ![Platform](https://img.shields.io/badge/Platform-Windows%20x64-blue)
 ![Framework](https://img.shields.io/badge/.NET%20Framework-4.0%2B-green)
 ![Security](https://img.shields.io/badge/Security-SoniMax%20Guard%20Native%20x64-purple)
-![Version](https://img.shields.io/badge/Version-2026.2.4-orange)
+![Version](https://img.shields.io/badge/Version-2026.2.5-orange)
 
 ---
 

@@ -1,7 +1,7 @@
 ﻿{
   "status": "success",
-  "version": "2026.2.4",
+  "version": "2026.2.5",
   "download_url": "https://raw.githubusercontent.com/kaimediadev-cmd/Sonimax-Audio-Master/main/SoniMax_AudioMaster_2026_Enterprise.zip",
-  "changelog": "- Khắc phục lỗi nghiêm trọng (Critical Bug Fix): Tự động tính toán lại bảng kiểm tra CRC16 từng block 512B cho phân vùng XRES khi nạp Group DSP / Audio, triệt tiêu 100% hiện tượng chết mạch và đen màn hình trên bo mạch JX5918 / V400L.\n- Bóc tách EQ DSP (.bin) từ file .upd chuẩn xác 100% từ dữ liệu giải mã thật, sẵn sàng nạp trực tiếp vào Audio WorkBench.\n- Không tự động xuất file .c / .bin mốc khi vừa nạp firmware gốc; chỉ xuất file khi người dùng nhấn nút yêu cầu.\n- Đổi đuôi file xuất ra mặc định ngắn gọn thành _Mod.ufw và _Mod.upd.\n- Căn chỉnh vị trí ô nhập Tên Bluetooth và Mã khóa thẳng hàng, tự động xóa trắng thông tin khi chuyển đổi chip.\n- Đóng gói đầy đủ thông tin Version 2026.2.4 Enterprise, Copyright và Icon thẩm mỹ vào file EXE.",
+  "changelog": "- Khắc phục triệt để lỗi nạp DSP cho chip AC65N / KT0708 đuôi .c: Hỗ trợ phân tích cú pháp hex chữ hoa 0X từ phần mềm KT Micro, đảm bảo nạp chính xác 100% không bị mất cấu hình DSP.\n- Chuẩn hóa định dạng mảng C xuất ra (Eft_Global) khớp 100% mẫu KT0708 chính thức (đầy đủ chú thích gói lệnh // MIC0 IN, // EQ_MUSIC BAND0, // Echo, // Reverb).\n- Tối ưu giao diện Chỉnh EQ KT0708 thành 1 dòng tinh gọn: [File EQ mới (.c)] + [Chọn file...] + [Bóc EQ từ .ufw], tự động đặt tên theo firmware gốc.\n- Căn chỉnh vị trí số ký tự Bluetooth nằm sát ngay sau ô nhập tên, tăng tính thẩm mỹ và trực quan.",
   "required": false
 }
